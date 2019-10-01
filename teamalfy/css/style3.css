@@ -1,0 +1,92 @@
+.banks {
+    display: inline-block;
+    float: none;
+}
+
+p {
+    margin: 0;
+}
+
+.grid-divider {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.grid-divider>[class*="col-"]:nth-child(n + 2):after {
+    content: "";
+    background-color: #c2c2c2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+
+    .grid-divider>[class*="col-"]:nth-child(n + 2):after {
+        width: 100%;
+        height: 1.5px;
+        left: 0;
+        top: -4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-divider>[class*="col-"]:nth-child(n + 2):after {
+        width: 1.5px;
+        height: auto;
+        left: -1px;
+    }
+}
+
+.message-navigation ul li {
+    border-right: 1px solid #797979;
+    height: 100%;
+    font-size: 18px;
+}
+
+.message-navigation ul li a{
+    padding: 0 15px;
+    color: #797979;
+    cursor: pointer;
+}
+
+.message-navigation ul li a:hover{
+    text-decoration: underline;
+    color: #ff0000;
+    background-color: #e0e0e0;
+}
+
+.message-navigation ul li:last-of-type {
+    border-right: none;
+}
+
+.message-navigation ul ul li {
+    border-right: none;
+}
+
+.custom-control-indicator{
+    border-color: #3c3d3f;
+}
+
+.star-icon{
+    padding: 5px 4px;
+    position: absolute;
+}
+
+.dash-hover:hover{
+    background-color: #4CAF50;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.lender-check{ margin-top: 45px; }
+.lender-check2{ margin-top: 40px; }
+.lender-check3{ margin-top: 5px; }
